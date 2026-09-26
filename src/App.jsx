@@ -5,7 +5,7 @@ import qrImage from './assets/qr.png'
 const PRESET_AMOUNTS = [51, 101, 251, 501]
 const BMAC_URL = 'https://buymeacoffee.com/chinesh'
 const PAYPAL_URL = 'https://paypal.me/ChineshSoni'
-const UPI_ID = 'chineshsoni2@okaxis' // Your UPI ID
+const UPI_ID = 'chineshsoni2@okhdfcbank' // Your Google Pay UPI ID
 
 // Reset cutoff timestamp to start clean
 const RESET_CUTOFF = '2026-09-25T16:50:00.000Z'
@@ -286,12 +286,9 @@ export default function App() {
                 <div className="upi-qr-box">
                   <div className="upi-qr-image-wrapper">
                     <img
-                      src={dynamicQrUrl}
-                      alt="UPI QR Code"
+                      src={qrImage}
+                      alt="Google Pay UPI QR Code - Chinesh Soni"
                       className="upi-qr-image"
-                      onError={(e) => {
-                        e.currentTarget.src = qrImage
-                      }}
                     />
                   </div>
 
