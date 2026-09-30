@@ -142,6 +142,84 @@ body {
   padding: 24px 20px;
 }
 
+.qr-main-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 24px;
+  padding: 24px 20px;
+}
+
+.qr-badge {
+  background: rgba(245, 166, 35, 0.12);
+  border: 1px solid rgba(245, 166, 35, 0.25);
+  color: var(--saffron);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+}
+
+.alt-support-section {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.alt-divider-text {
+  position: relative;
+  text-align: center;
+  margin: 6px 0;
+}
+
+.alt-divider-text::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  z-index: 1;
+}
+
+.alt-divider-text span {
+  position: relative;
+  z-index: 2;
+  background: var(--card-bg);
+  padding: 0 12px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+}
+
+.alt-buttons-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.alt-buttons-grid .bmac-cta-btn {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 17px;
+}
+
+.alt-buttons-grid .paypal-link-btn {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 16px;
+}
+
 /* Method Tabs */
 .method-tabs {
   display: flex;
